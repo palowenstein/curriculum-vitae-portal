@@ -1,13 +1,4 @@
-/*
-*	SPLIT (HTML version)
-* 	Copyright 2015
-* 	www.mutationmedia.net
-* 	Created by : mutationthemes
-*
-*/
-
-
-/* Table of Content
+/* SPLIT — Table of Content
 ==================================================
 1-Preloader
 2-Header
@@ -18,14 +9,9 @@
   3/4-Contact tab
 4-Media queries
 
-
-
-
-
-
 /*Preloader*/
 #loader {
-    background: #efefef;
+    background: #101a23;
     bottom: 0;
     height: 100%;
     left: 0;
@@ -38,7 +24,7 @@
 
 
 #loaderInner {
-
+    background: #101a23;
     height: 100%;
     left: 0;
     position: absolute;
@@ -120,20 +106,30 @@
     transform: rotate(360deg);
   }
 }
-
-
-
 /*End preloader*/
 
 
+/*Couleur de Fond */
 
+.canvas {
+    background: #101a23;
+}
+
+#wrapper {
+    background: #101a23;
+}
+
+/*Fin Couleur de Fond */
 
 
 /*Header*/
 
+#header {
+    background: #22666f;
+}
 
 .img-profile{
-	position:relative;
+	position: relative;
 }
 
 .img-profile .name-profile{
@@ -181,16 +177,16 @@
 
 
 .main-nav ul li:last-child{
-	border-bottom:none;
+	border-bottom:1px solid #26292e;
 }
 
 
 .main-nav ul li a{
 	display:table;
 	text-align:right;
-	background:#33373d;
-	color:#85878b;
-	font-size:12px;
+	background:#22666f;
+	color:#ffffff;
+	font-size:14px;
 	text-transform:uppercase;
 	padding:15px 25px;
 	
@@ -299,8 +295,6 @@
 	
 }
 
-
-
 .social li {
     display: inline-block;
     margin-right: 2px;
@@ -308,32 +302,22 @@
 }
 
  .social a {
-    border: 2px solid #33373d;
-    color: #33373d;
+    border: 2px solid #d1ebef;
+    color: #d1ebef;
     display: inline-block;
     height: 35px;
     width: 35px;
 }
 
-
 .social li i {
     line-height: 32px;
-	font-size:12px;
+	font-size:20px;
 }
-
 
 .social a:hover {
     border: 2px solid #cd5353;
     color: #cd5353;
 }
-
-
-.bottom-header p {
-    margin-top: 10px;
-	font-size:13px;
-}
-
-
 
 
 /*End header*/
@@ -361,15 +345,19 @@
 	overflow:hidden;
 }
 
+.about .profile {
+    text-align: center;
+}
+
 .about .profile h1{
 	font-size:28px;
 	line-height:25px;
 }
 
-
 .about .profile h3{
 	font-size:22px;
 	color:#777777;
+    margin-bottom: 1rem;
 }
 
 
@@ -504,19 +492,15 @@
 	margin-bottom:0;
 	font-size:13px;
 	color:#666666;
-	
 }
 
 
 .skill .title{
-
-	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    left: -15px;
-    padding: 5px 25px;
+    left: 0px;
+    padding: 0px;
+    
     position: absolute;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     top: 0;
 }
@@ -587,6 +571,9 @@
 	content: '\e80c';
 }
 
+.timeline.skills:after{
+	content: '\e831';
+}
 
 .exp{
 	padding-left: 50px;
@@ -639,14 +626,14 @@
 
 
 .exp .hgroup h6 span.current{
-	color:#ffffff;
+	color: #ffffff;
 	background: #cd5353;
-	border-radius:6px;
-	-moz-border-radius:6px
-	-webkit-border-radius :6px;
-	-ms-border-radius:6px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-ms-border-radius: 6px;
 	-o-border-radius: 6px;
-	padding:1px 12px;
+	padding: 1px 12px;
 }
 
 
@@ -661,10 +648,6 @@
 	margin-bottom:10px;
 	color: #cd5353;
 }
-
-
-
-
 
 
 
@@ -734,16 +717,70 @@
 
 /*------------------------ End about section ------------------------*/
 
+/* About Section Hyperlinks */
 
+#aboutLinks {
+    margin-bottom: 0rem;
+}
+
+.block-section ul {
+    display: inline-block;
+    position: relative;
+}
+
+.section li {
+    font-family: 'open_sanssemibold', Arial, sans-serif;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.section li a {
+    color: #33373d;
+}
+
+.section li a:hover {
+    color: #cd5353;
+}
+
+.section li a.active {
+    color: #cd5353;
+}
 
 /*------------------------ Portfolio section ------------------------*/
 
+
+/*.portfolio .profile h1{font-size:25px;}
+.portfolio .profile h3{line-height:30px;font-size:20px;}*/
+
+
+.portfolio .profile {
+    text-align: center;
+}
+
+.portfolio .profile h1{
+    font-family: 'open_sansextrabold',Arial,sans-serif;    
+	font-size:28px;
+	line-height:25px;
+}
+
+.portfolio .profile h3{
+    font-family: 'open_sanslight',Arial,sans-serif;
+	font-size:22px;
+	color:#777777;
+    margin-bottom: 1rem;
+}
+
+#category {
+    margin-bottom: 5rem;
+}
 
 .block-filter ul {
     display: inline-block;
     position: relative;
 }
-
 
 .filter li {
     display: inline-block;
@@ -753,19 +790,13 @@
 	font-size:13px;
 }
 
-
-
 .filter li a {
     color: #33373d;
 }
 
-
 .filter li a:hover {
     color: #cd5353;
 }
-
-
-
 
 
 .filter li a.active {
@@ -1215,6 +1246,25 @@ span.meta-date{
 
 
 /*------------------------ Contact section ------------------------*/
+
+
+
+.contact .profile {
+    text-align: center;
+}
+
+.contact .profile h1{
+    font-family: 'open_sansextrabold',Arial,sans-serif;    
+	font-size:28px;
+	line-height:25px;
+}
+
+.contact .profile h3{
+    font-family: 'open_sanslight',Arial,sans-serif;
+	font-size:22px;
+	color:#777777;
+    margin-bottom: 1rem;
+}
 
 
 #map{
