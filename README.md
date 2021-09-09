@@ -1,2 +1,1 @@
-# curriculum-vitae-portal
-Curriculum Vitae Portal includes: Who I Am (Experience, Education), What I Do (Code, Production, Scoring Examples), Contact (Write, Call, Résumé, Links), PDF Résumé Direct Access.
+Curriculum Vitae Portal includes: Profile (Experience, Skills, Education), Works (Code, Production, Scoring), Contact (Address, Write, Call, Résumé, Links, PHP Contact Form), PDF Résumé Direct Access, Online Portfolio Direct Access.
